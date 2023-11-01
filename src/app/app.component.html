@@ -1,0 +1,77 @@
+<div clas="row justify-content-md-center">
+  <div class="col-md-10 mx-auto">
+    <div class="translate-form">
+      <div class="row" style="background-color:rgb(51, 51, 51); border-radius:20px;color: aliceblue;">
+        <div class="col">
+          <label for="sourceLan"><b>Source Language</b></label>
+          <div class="row" style="padding-left: 10px;">
+            <div div class="col">
+              <label for="ens">English</label>
+            </div>
+            <div div class="col">
+              <input type="radio" id="ens" name="ens" value="en" [(ngModel)]="sourceLan" (click)="rbtnClick()">
+            </div>
+          </div>
+          <div class="row" style="padding-left: 10px;">
+            <div div class="col">
+              <label for="ess">Spanish</label>
+            </div>
+            <div div class="col">
+              <input type="radio" id="ess" name="ess" value="es" [(ngModel)]="sourceLan" (click)="rbtnClick()">
+            </div>
+          </div>
+          <div class="row" style="padding-left: 10px;">
+            <div div class="col">
+              <label for="des">German</label>
+            </div>
+            <div div class="col">
+              <input type="radio" id="des" name="des" value="de" [(ngModel)]="sourceLan" (click)="rbtnClick()">
+            </div>
+          </div>
+        </div>
+        <div class="col" style="background-color: rgb(51, 51, 51);border-radius:20px;color: aliceblue">
+          <label for="transLan"><b>Translation</b></label>
+          <div class="row" style="padding-left: 10px;">
+            <div div class="col">
+              <label for="est">Spanish</label>
+            </div>
+            <div div class="col">
+              <input type="radio" id="est" name="est" value="es" [(ngModel)]="transLan" (click)="rbtnClick()"
+                [disabled]="sourceLan =='es'">
+            </div>
+          </div>
+          <div class="row" style="padding-left: 10px;">
+            <div div class="col">
+              <label for="det">German</label>
+            </div>
+            <div div class="col">
+              <input type="radio" id="det" name="det" value="de" [(ngModel)]="transLan" (click)="rbtnClick()"
+                [disabled]="sourceLan =='de'">
+            </div>
+          </div>
+          <div class="row" style="padding-left: 10px;">
+            <div div class="col">
+              <label for="ent">English</label>
+            </div>
+            <div div class="col">
+              <input type="radio" id="ent" name="ent" value="en" [(ngModel)]="transLan" (click)="rbtnClick()"
+                [disabled]="sourceLan =='en'">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="height: 200px;">
+          <input class="text-control" style="font-size: 30px;  height: 200px;width: 600px;border-radius:20px;"
+            type="text" id="transText" placeholder="Type here..." name="transText" [(ngModel)]="transText"
+            (keypress)="onKeyPress($event)" (keydown)="onKeyDown($event)">
+        </div>
+        <div class="col" style="height: 200px;">
+          <input class="text-control" style="font-size: 30px;  height: 200px;width: 600px;border-radius:20px;"
+            type="text" id="translatedText" placeholder="Translation" name="translatedText" value="{{translatedText}}"
+            disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

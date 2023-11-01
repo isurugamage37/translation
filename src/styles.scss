@@ -1,0 +1,51 @@
+
+$enable-shadows: true;
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+.translate-form {
+    background-color: #ffffffd7;
+    padding: 50px 20px;
+    margin-top: 100px;
+    -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 30px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius:20px;
+}
+
+.translate-form .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.translate-form .form-control {
+    background-color: #d2d3d4;
+    border-radius: 4px;
+    border: none;
+    height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #3e485c;
+    font-size: 14px;
+    // font-weight: 900;
+}
+
+.translate-form .text-control {
+    background-color: #cad3da;
+    border-radius: 4px;
+    border: none;
+    height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #3e485c;
+    font-size: 14px;
+    text-align: center;
+    width: 50%;
+    // font-weight: 900;
+}
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

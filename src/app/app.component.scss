@@ -1,0 +1,26 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container, .row, .col {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    flex: 1;
+    display: flex;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 10px;
+   
+  }
+  
