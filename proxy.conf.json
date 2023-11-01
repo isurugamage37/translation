@@ -1,0 +1,7 @@
+{
+  "/get": {
+    "target": "http://api.mymemory.translated.net",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
